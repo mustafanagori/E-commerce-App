@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - RedStore</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- this is the font-family link -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" rel="stylesheet">
+    <!-- font awesome    google = font awesome 4 dcn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="./index.html"><img src="./images/redstore_logo.png" width="125px"></a>
+            </div>
+        <nav>
+            <ul id="menuItems">
+                <li><a href="./index.html   ">Home</a></li>
+                <li><a href="./product.html">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="./account.html">Account</a></li>
+            </ul>
+        </nav>
+       <a href="./card.html"><img src="./images/card-icon.png" width="30px" height="30px"></a>
+        <img src="./images/menu.png" class="menu" onclick="menutoggle()">
+        </div>
+    <div> 
+     <!-- this is the end of the header -->
+
+     <!-- card item desatils -->
+     <div class="small-container card-page">
+         <table>
+             <tr>
+                 <th>Product</th>
+                 <th>Quantity</th>
+                 <th>Subtotal</th>
+             </tr>
+             <tr>
+                <td>
+                    <div card-info>
+                        <img src="./images/Redprinted-T-Shirt.jpg">
+                        <div>
+                            <p>Red Printed T-Shirt</p>
+                            <small>Price</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+             </tr>
+
+             <tr>
+                <td>
+                    <div card-info>
+                        <img src="./images/black-printed T-shirt.jpg">
+                        <div>
+                            <p>Black Printed T-Shirt</p>
+                            <small>Price</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$100.00</td>
+             </tr>
+
+             <tr>
+                <td>
+                    <div card-info>
+                        <img src="./images/black-shoes.jpg">
+                        <div>
+                            <p>Black Shoes</p>
+                            <small>Price</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+             </tr>
+
+         </table>
+     </div>
+
+     <div class="total-price">
+         <table>
+             <tr>
+                 <td>Subtotal</td>
+                 <td>$200.00</td>
+             </tr>
+             <tr>
+                <td> Tax</td>
+                <td>$35.00</td>
+            </tr>
+            <tr>
+                <td>total</td>
+                <td>$235.00</td>
+            </tr>
+         </table>
+     </div>
+    
+     
+
+
+
+
+
+     
+    <!-- -- this is the footer -------------------->
+        <!--     this is the footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                        <div class="footer-col-1">
+                            <h3>Download our App </h3>
+                            <p>Download App for Andriod and ios mobile phone.</p>
+                            <div class="app-logo">
+                                <img src="./images/playsstore.png">
+                                <img src="./images/appstore.png">
+                            </div>
+                        </div>
+    
+                        <div class="footer-col-2">
+                            <img src="./images/redstore_logo.png">
+                            <p>Our Purpose Is To Sustainably Make th Pleasure and Benefits of Sports Accessible to the Many.</p>
+                        </div>
+    
+                        <div class="footer-col-3">
+                            <h3>Useful Links</h3>
+                            <ul>
+                                <li>Conpoun</li>
+                                <li>blog Post</li>
+                                <li>Return Policy</li>
+                                <li>Join Affiliate</li>
+                            </ul>
+                        </div>
+    
+                        <div class="footer-col-4">
+                            <h3>Follow us</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Twiter</li>
+                                <li>Instagram</li>
+                                <li>youtube</li>
+                            </ul> 
+                        </div>
+                    <div>
+                    <hr>
+                <p class="copyright">copyright  2020 - Easy Tutorial</p>
+            </div>
+        </div>
+        
+
+    <!-- js for  toggle meue -->
+
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if(menuItems.style.maxHeight == "0px")
+            {
+                menuItems.style.maxHeight = "200px";
+            }
+            else{
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>
